@@ -1,0 +1,162 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevdubyyproject"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_BLOBE_accountKey": {
+			"value": ""
+		},
+		"LS_Binary_TXT_connectionString": {
+			"value": ""
+		},
+		"LS_CSV_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_PRATCICAL3_accountKey": {
+			"value": ""
+		},
+		"LS_INPUT_BLOBE_ADLS_connectionString": {
+			"value": ""
+		},
+		"LS_MULTIPLE_CSV_PARQUET_connectionString": {
+			"value": ""
+		},
+		"LS_MUTIPLE_OUT_accountKey": {
+			"value": ""
+		},
+		"LS_OUTPUT_BINARY_accountKey": {
+			"value": ""
+		},
+		"LS_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_REST_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_REST_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SOURCE_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_MIGRAT_password": {
+			"value": ""
+		},
+		"LS_SQL_SERVER_password": {
+			"value": ""
+		},
+		"LS_STOED_PROC1_password": {
+			"value": ""
+		},
+		"LS_TARGET_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_TARGET_TXT_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultsql00123.vault.azure.net/"
+		},
+		"AzureKeyVault2_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultsql00123.vault.azure.net/"
+		},
+		"LS_ADLS_BLOBE_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_CSV_PRATCICAL3_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_MUTIPLE_OUT_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_BINARY_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_REST_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_REST_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_SOURCE_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_SQL_MIGRAT_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQL_MIGRAT_properties_typeProperties_database": {
+			"value": "VisionBoardmigration"
+		},
+		"LS_SQL_MIGRAT_properties_typeProperties_userName": {
+			"value": "achu"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_database": {
+			"value": "VisionBoardMigration"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_userName": {
+			"value": "achu"
+		},
+		"LS_STOED_PROC1_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_STOED_PROC1_properties_typeProperties_database": {
+			"value": "VisionBoardMigration"
+		},
+		"LS_STOED_PROC1_properties_typeProperties_userName": {
+			"value": "achu"
+		},
+		"LS_TARGET_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"LS_TARGET_TXT_properties_typeProperties_url": {
+			"value": "https://adlsdevdubyproject0002.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "localhostlocalhost\\SQLEXPRESS\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "VisionBoardMigration"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "achu"
+		},
+		"SqlServer2_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"SqlServer2_properties_typeProperties_database": {
+			"value": "VisionBoardMigration"
+		},
+		"SqlServer2_properties_typeProperties_userName": {
+			"value": "achu"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
