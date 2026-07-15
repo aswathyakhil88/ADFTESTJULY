@@ -1,0 +1,18 @@
+{
+	"name": "DS_TARGET_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_TARGET_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "targetscsv"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

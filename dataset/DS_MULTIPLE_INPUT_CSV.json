@@ -1,0 +1,22 @@
+{
+	"name": "DS_MULTIPLE_INPUT_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MULTIPLE_CSV_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,18 @@
+{
+	"name": "DS_TARGET_TXT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_TARGET_TXT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "targettxt"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
