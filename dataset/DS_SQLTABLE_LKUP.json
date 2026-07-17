@@ -1,0 +1,12 @@
+{
+	"name": "DS_SQLTABLE_LKUP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLTABLE_LKUP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

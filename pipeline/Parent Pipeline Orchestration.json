@@ -1,9 +1,9 @@
 {
-	"name": "PL_PARENT_PIPELINE",
+	"name": "Parent Pipeline Orchestration",
 	"properties": {
 		"activities": [
 			{
-				"name": "LKUP_SQLTABLE_WATRMARK_DW",
+				"name": "LKUP_SQLTABLE_WATERMARK_DW",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -17,23 +17,23 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "SELECT TableSchema, TableName, WatermarkColumn, LastLoadValue FROM dbo.ADF_Watermark_Table;",
+						"sqlReaderQuery": "SELECT \nTableSchema, TableName,WatermarkColumn, LastLoadValue FROM dbo.ADF_Watermark_Table;\n",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "DS_SQL_TABLE_LOOKUP",
+						"referenceName": "DS_SQLTABLE_LKUP",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "FOREACH_SQLTABLE",
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "LKUP_SQLTABLE_WATRMARK_DW",
+						"activity": "LKUP_SQLTABLE_WATERMARK_DW",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -42,13 +42,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LKUP_SQLTABLE_WATRMARK_DW').output.value\n",
+						"value": "@activity('LKUP_SQLTABLE_WATERMARK_DW').output.value",
 						"type": "Expression"
 					},
 					"isSequential": false,
 					"activities": [
 						{
-							"name": "Execute Pipeline1",
+							"name": "EXEC_SQL_INCREMENTAL_PIPELINE",
 							"type": "ExecutePipeline",
 							"dependsOn": [],
 							"policy": {
